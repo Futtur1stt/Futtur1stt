@@ -16,7 +16,21 @@
   </div>
 
 <h2 align="left">💻 Технологии:</h2>
-<p align="left">
-  
-</p>
+  <div id="texnology">
+    <a href="" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="html5 logo" />
+    </a>
+    <a href="" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="css3 logo" />
+    </a>
+    <a href="" target="_blank">
+      <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40" height="40" alt="figma logo" />
+    </a>
+    <a href="" target="_blank">
+      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="git logo" />
+    </a>
+    <a href="" target="_blank">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="40" height="40" alt="scss logo" />
+    </a>
+  </div>
 
