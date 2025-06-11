@@ -7,7 +7,7 @@
 Хочу получить работу по данному направлению!
 
 ## 🔗 Связаться со мной:
-[![telegram]()](https://t.me/Futtur1stt)
+[![telegram](![image](https://github.com/user-attachments/assets/f6ae97c9-fea1-44ac-98b9-44cd96941401))](https://t.me/Futtur1stt)
 
 <h2 align="left">💻 Технологии:</h2>
 <p align="left"> 
