@@ -18,11 +18,21 @@
 
 <h2 align="left">💻 Технологии:</h2>
   <div id="texnology">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="html5 logo" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="css3 logo" />
-    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40" height="40" alt="figma logo" />
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="git logo" />
-    <img src="https://www.svgrepo.com/show/353481/bem.svg" width="40" height="40" alt="bem logo" />
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="40" height="40" alt="scss logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="html5" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="css3" />
+    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40" height="40" alt="figma" />
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="git" />
+    <img src="https://www.svgrepo.com/show/353481/bem.svg" width="40" height="40" alt="bem" />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="40" height="40" alt="scss" />
+    <img src="https://www.svgrepo.com/svg/373705/js-official" width="40" height="40" alt="JS" />
+    <img src="https://www.svgrepo.com/svg/394316/npm" width="40" height="40" alt="npm" />
+    <img src="https://www.svgrepo.com/svg/374167/vite" width="40" height="40" alt="Vite" />
   </div>
 
+# 📊 Статистика GitHub:
+![](https://github-readme-stats.vercel.app/api?username=Futtur1stt&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=Futtur1stt&theme=tokyonight&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Futtur1stt&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+
+### ✍️ Случайная цитата разработчика
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
