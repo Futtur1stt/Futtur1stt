@@ -3,7 +3,7 @@
 ###
 
 <div id="badges" align="center">
-  <a href="https://t.me/Futtur1stt" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="50" height="50" alt="Telegram"/></a>
+  <a href="https://t.me/Futtur1stt"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="50" height="50" alt="Telegram"/></a>
   <a href="mailto:ipoly04@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2913/2913990.png" width="50" height="50" alt="Gmail"/></a>
 </div>
 
