@@ -36,12 +36,12 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="45" height="45" alt="Vite" />
   </div>
 
-<h2 align="left">📊 Статистика GitHub:</h2>
+## 📊 Статистика GitHub:
 ![](https://github-readme-stats.vercel.app/api?username=Futtur1stt&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false)<br/>
 
 ![](https://nirzak-streak-stats.vercel.app/?user=Futtur1stt&theme=tokyonight&hide_border=false)<br/>
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Futtur1stt&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-<h2 align="left">✍️ Random</h2>
+## ✍️ Random
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
