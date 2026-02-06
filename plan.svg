@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="6360" viewBox="0 0 1600 6360">
+<style>
+  .bg { fill: #FAFAFA; }
+  .h1 { font: 700 26px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #111; }
+  .h2 { font: 700 22px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #111; }
+  .h3 { font: 600 20px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #111; }
+  .p, .li { font: 400 18px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #222; }
+</style>
+<rect class="bg" x="0" y="0" width="1600" height="6360" />
+<text class="h1" x="20" y="20">Дорожная карта: Браузерный JavaScript за 4 недели (3–4 ч/день)</text>
+<text class="li" x="44" y="76">• Формат: 6 дней в неделю, 1 день — отдых/буфер. Каждый день: 90–120 мин теории + конспект, 60–120 мин</text>
+<text class="li" x="44" y="100">• практики/упражнений, 15–30 мин рефактор/коммиты.</text>
+<text class="li" x="44" y="124">• Инструменты: без сборщиков (Vite/npm) на этом этапе. Запуск через простой сервер, иначе CORS и file:// создадут</text>
+<text class="li" x="44" y="148">• проблемы.</text>
+<text class="p" x="20" y="172">  - Быстрый старт сервера: `python3 -m http.server 5173` и открыть `http://localhost:5173`</text>
+<text class="p" x="20" y="196">  - Или VS Code Live Server.</text>
+<text class="h2" x="20" y="236">Содержание</text>
+<text class="li" x="44" y="268">• Неделя 1 (Дни 1–6): DOM, события, формы/валидация, ошибки (try/catch), RegExp 80/20, утилиты (debounce/throttle, rAF)</text>
+<text class="li" x="44" y="292">• Неделя 2 (Дни 7–12): API/HTTP/REST, Fetch + CORS, Promises, async/await, Abort/timeout/retry, Web Storage, URL/History,</text>
+<text class="li" x="44" y="316">• ES‑modules, DevTools</text>
+<text class="li" x="44" y="340">• Неделя 3: Проект 1 — «Умная форма» (регистрация/заказ)</text>
+<text class="li" x="44" y="364">• Неделя 4: Проект 2 — «Каталог по публичному API» (DummyJSON)</text>
+<text class="li" x="44" y="388">• Критерии качества и контрольные точки</text>
+<text class="p" x="20" y="428">---</text>
+<text class="h2" x="20" y="468">Ссылки-источники (используются в плане)</text>
+<text class="li" x="44" y="500">• MDN DOM/Element/DocumentFragment: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model</text>
+<text class="li" x="44" y="524">• JS.info DOM: https://javascript.info/dom-navigation, https://javascript.info/modifying-document</text>
+<text class="li" x="44" y="548">• MDN События: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</text>
+<text class="li" x="44" y="572">• MDN Keyboard/Focus: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent</text>
+<text class="li" x="44" y="596">• MDN Forms/Validation: https://developer.mozilla.org/en-US/docs/Learn/Forms, https://developer.mozilla.org/en-</text>
+<text class="li" x="44" y="620">• US/docs/Learn/Forms/Form_validation</text>
+<text class="li" x="44" y="644">• MDN ValidityState: https://developer.mozilla.org/en-US/docs/Web/API/ValidityState</text>
+<text class="li" x="44" y="668">• MDN aria-live: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live</text>
+<text class="li" x="44" y="692">• JS.info Ошибки: https://javascript.info/try-catch, https://javascript.info/custom-errors</text>
+<text class="li" x="44" y="716">• MDN try...catch, Error: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch</text>
+<text class="li" x="44" y="740">• MDN RegExp Guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</text>
+<text class="li" x="44" y="764">• MDN rAF/setTimeout: https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame</text>
+<text class="li" x="44" y="788">• web.dev Long tasks: https://web.dev/optimize-long-tasks/</text>
+<text class="li" x="44" y="812">• web.dev Lighthouse: https://developer.chrome.com/docs/lighthouse/overview/</text>
+<text class="li" x="44" y="836">• web.dev Learn Accessibility: https://web.dev/learn/accessibility/</text>
+<text class="li" x="44" y="860">• MDN HTTP Overview/Methods/Status/Headers: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview</text>
+<text class="li" x="44" y="884">• Postman What is a REST API?: https://learning.postman.com/docs/introduction/overview/</text>
+<text class="li" x="44" y="908">• MDN Fetch: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API</text>
+<text class="li" x="44" y="932">• MDN CORS: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS</text>
+<text class="li" x="44" y="956">• JS.info Fetch: https://javascript.info/fetch</text>
+<text class="li" x="44" y="980">• JS.info Promises/Microtasks/Async: https://javascript.info/promise-basics, https://javascript.info/promise-chaining,</text>
+<text class="li" x="44" y="1004">• https://javascript.info/microtask-queue, https://javascript.info/async-await</text>
+<text class="li" x="44" y="1028">• MDN Promise utils: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</text>
+<text class="li" x="44" y="1052">• MDN AbortController: https://developer.mozilla.org/en-US/docs/Web/API/AbortController</text>
+<text class="li" x="44" y="1076">• MDN Web Storage: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API</text>
+<text class="li" x="44" y="1100">• MDN History API: https://developer.mozilla.org/en-US/docs/Web/API/History_API</text>
+<text class="li" x="44" y="1124">• MDN URLSearchParams: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams</text>
+<text class="li" x="44" y="1148">• MDN ES Modules: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules</text>
+<text class="li" x="44" y="1172">• MDN import/export: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import</text>
+<text class="li" x="44" y="1196">• Chrome DevTools: https://developer.chrome.com/docs/devtools/</text>
+<text class="li" x="44" y="1220">• DummyJSON docs: https://dummyjson.com/docs/products</text>
+<text class="li" x="44" y="1244">• ReqRes (мок‑API): https://reqres.in/</text>
+<text class="p" x="20" y="1284">---</text>
+<text class="h2" x="20" y="1324">Неделя 1 — Теория (Дни 1–6)</text>
+<text class="h3" x="20" y="1372">День 1 — DOM: поиск и изменение</text>
+<text class="li" x="44" y="1400">• Теория: MDN DOM/Element/DocumentFragment; JS.info навигация/изменение документа (ссылки выше).</text>
+<text class="li" x="44" y="1424">• Упражнения:</text>
+<text class="p" x="20" y="1448">  1) Создать `index.html`, `styles.css`, `js/day1.js` (подключить `&lt;script type="module"&gt;`). В HTML — контейнер `&lt;div</text>
+<text class="p" x="20" y="1472">id="list"&gt;&lt;/div&gt;`.</text>
+<text class="p" x="20" y="1496">  2) В `js/day1.js`:</text>
+<text class="p" x="20" y="1520">     - Объявить массив из 5–10 объектов `{ id, title, price }`.</text>
+<text class="p" x="20" y="1544">     - Функция `renderCard(item)` — создает DOM‑узел карточки через `document.createElement`, устанавливает</text>
+<text class="p" x="20" y="1568">текст/классы.</text>
+<text class="p" x="20" y="1592">     - Функция `renderList(items, container)`: создать `DocumentFragment`, пройтись по `items`,</text>
+<text class="p" x="20" y="1616">`frag.append(renderCard(i))`, затем `container.replaceChildren(frag)`.</text>
+<text class="p" x="20" y="1640">  3) Критерии: без инлайн-обработчиков в HTML; рендер одним вызовом `renderList`.</text>
+<text class="h3" x="20" y="1680">День 2 — События и делегирование</text>
+<text class="li" x="44" y="1708">• Теория: MDN addEventListener, всплытие/захват, KeyboardEvent, основы фокуса.</text>
+<text class="li" x="44" y="1732">• Упражнения:</text>
+<text class="p" x="20" y="1756">  1) Делегирование кликов: навесить один `click`‑слушатель на контейнер списка, находить карточку через</text>
+<text class="p" x="20" y="1780">`event.target.closest('.card')`.</text>
+<text class="p" x="20" y="1804">  2) Клавиатурная навигация: обработчик `keydown` на контейнере; по ArrowDown/ArrowUp переводить фокус на соседнюю</text>
+<text class="p" x="20" y="1828">карточку (через `tabindex` и `focus()`).</text>
+<text class="p" x="20" y="1852">  3) Критерии: мышь и клавиатура работают; один слушатель на контейнере.</text>
+<text class="h3" x="20" y="1892">День 3 — Формы и валидация</text>
+<text class="li" x="44" y="1920">• Теория: MDN Forms, FormData, Constraint Validation API, ValidityState, aria‑live.</text>
+<text class="li" x="44" y="1944">• Упражнения:</text>
+<text class="p" x="20" y="1968">  1) Разметка формы: поля `name`, `email`, `password`, чекбокс согласия; блок ошибок `&lt;div role="status" aria-</text>
+<text class="p" x="20" y="1992">live="polite" id="errors"&gt;&lt;/div&gt;`.</text>
+<text class="p" x="20" y="2016">  2) JS: по `submit` собрать `FormData`, для каждого поля если пусто — `setCustomValidity('…')`, иначе `''`; если форма</text>
+<text class="p" x="20" y="2040">невалидна — `form.reportValidity()` и фокус на первом невалидном.</text>
+<text class="p" x="20" y="2064">  3) Выводить краткое сводное сообщение об ошибках в `#errors`.</text>
+<text class="p" x="20" y="2088">  4) Критерии: валидные сообщения, доступный вывод, корректный фокус.</text>
+<text class="h3" x="20" y="2128">День 4 — Ошибки (try/catch) + RegExp 80/20</text>
+<text class="li" x="44" y="2156">• Теория: JS.info try/catch и пользовательские ошибки; MDN Error; RegExp (классы/квантификаторы/якоря/флаги).</text>
+<text class="li" x="44" y="2180">• Упражнения:</text>
+<text class="p" x="20" y="2204">  1) `parseJsonSafe(str)`: `try { JSON.parse } catch (e) { return { ok:false, error:e.message } }` иначе `{ ok:true,</text>
+<text class="p" x="20" y="2228">data }`.</text>
+<text class="p" x="20" y="2252">  2) `class ValidationError extends Error { constructor(msg, field){ super(msg); this.name='ValidationError';</text>
+<text class="p" x="20" y="2276">this.field=field; } }` — генерируй при проверках формы и показывай понятные сообщения.</text>
+<text class="p" x="20" y="2300">  3) Нормализация телефона: `s.replace(/\D+/g,'')`; простая проверка email: `/^\S+@\S+\.\S+$/`.</text>
+<text class="p" x="20" y="2324">  4) Критерии: падения нет, ошибки локализованы, сообщения читабельные.</text>
+<text class="h3" x="20" y="2364">День 5 — Утилиты: debounce/throttle, requestAnimationFrame</text>
+<text class="li" x="44" y="2392">• Теория: rAF и таймеры; оптимизация длинных задач (web.dev).</text>
+<text class="li" x="44" y="2416">• Упражнения:</text>
+<text class="p" x="20" y="2440">  1) Реализовать `debounce(fn, ms)` (вызов через `ms` после последнего события) и `throttle(fn, ms)` (не чаще 1 раза в</text>
+<text class="p" x="20" y="2464">`ms`).</text>
+<text class="p" x="20" y="2488">  2) Применить debounce к `input` поиска — логировать запрос только после паузы.</text>
+<text class="p" x="20" y="2512">  3) Маленькая анимация через rAF (плавный счетчик/прогресс‑бар).</text>
+<text class="p" x="20" y="2536">  4) Критерии: нет «спама» обработчиками; анимация плавная.</text>
+<text class="h3" x="20" y="2576">День 6 — Повтор и качество</text>
+<text class="li" x="44" y="2604">• Теория: Lighthouse, a11y чек‑лист (web.dev).</text>
+<text class="li" x="44" y="2628">• Упражнения:</text>
+<text class="p" x="20" y="2652">  1) Проверить разметку: один `h1`, корректная иерархия заголовков, видимый фокус, контраст.</text>
+<text class="p" x="20" y="2676">  2) Запустить Lighthouse (моб.) и зафиксировать метрики.</text>
+<text class="p" x="20" y="2700">  3) Критерии: A11y/Best Practices ≥ 90 (на текущей болванке/демо).</text>
+<text class="p" x="20" y="2740">---</text>
+<text class="h2" x="20" y="2780">Неделя 2 — Теория (Дни 7–12)</text>
+<text class="h3" x="20" y="2828">День 7 — API/HTTP/REST (концепции)</text>
+<text class="li" x="44" y="2856">• Теория: MDN HTTP overview/methods/status/headers; Postman — что такое REST API.</text>
+<text class="li" x="44" y="2880">• Упражнения:</text>
+<text class="p" x="20" y="2904">  1) Создать `notes.md` и описать 5 эндпоинтов DummyJSON: список, поиск, категории, категория по имени, деталь; привести</text>
+<text class="p" x="20" y="2928">примеры URL с `limit/skip`.</text>
+<text class="p" x="20" y="2952">  2) Для каждого эндпоинта — метод, пример запроса и полей ответа.</text>
+<text class="p" x="20" y="2976">  3) Критерии: понимаешь path vs query, коды 2xx/4xx/5xx и их смысл.</text>
+<text class="h3" x="20" y="3016">День 8 — Fetch и CORS</text>
+<text class="li" x="44" y="3044">• Теория: MDN Fetch, CORS; JS.info Fetch.</text>
+<text class="li" x="44" y="3068">• Упражнения:</text>
+<text class="p" x="20" y="3092">  1) Написать `loadProducts(limit=10)`: `fetch(url)`, проверка `res.ok`, `await res.json()`.</text>
+<text class="p" x="20" y="3116">  2) Мини‑UI статусов: показать `loading → success` (3 элемента) → `empty` (если пусто) → `error` (если 4xx/5xx/сеть).</text>
+<text class="p" x="20" y="3140">  3) Критерии: разные статусы отрабатывают, ошибки не роняют приложение.</text>
+<text class="h3" x="20" y="3180">День 9 — Promises и async/await</text>
+<text class="li" x="44" y="3208">• Теория: состояния, цепочки, микрозадачи; async/await; Promise utils (`all`, `allSettled`, `race`, `any`).</text>
+<text class="li" x="44" y="3232">• Упражнения:</text>
+<text class="p" x="20" y="3256">  1) Последовательно: запрос продуктов, затем категорий — замерь время.</text>
+<text class="p" x="20" y="3280">  2) Параллельно через `Promise.all` — замерь время и сравни.</text>
+<text class="p" x="20" y="3304">  3) Перепиши then‑цепь на `async/await + try/catch`.</text>
+<text class="p" x="20" y="3328">  4) Критерии: параллель используется корректно; один локальный `catch`.</text>
+<text class="h3" x="20" y="3368">День 10 — AbortController, таймауты, ретраи</text>
+<text class="li" x="44" y="3396">• Теория: MDN AbortController, abort signals.</text>
+<text class="li" x="44" y="3420">• Упражнения:</text>
+<text class="p" x="20" y="3444">  1) `withTimeout(promise, ms)` через `Promise.race` с таймаут‑промисом.</text>
+<text class="p" x="20" y="3468">  2) `retry(fn, { attempts=3, backoffMs=500 })` — экспоненциальный backoff.</text>
+<text class="p" x="20" y="3492">  3) Поле поиска: отменять предыдущий `fetch` через `AbortController` при следующем вводе.</text>
+<text class="p" x="20" y="3516">  4) Критерии: отмены не помечаются «красными» ошибками; есть кнопка «Повторить».</text>
+<text class="h3" x="20" y="3556">День 11 — Web Storage + URL/History</text>
+<text class="li" x="44" y="3584">• Теория: MDN Web Storage, History API, URLSearchParams.</text>
+<text class="li" x="44" y="3608">• Упражнения:</text>
+<text class="p" x="20" y="3632">  1) TTL‑кэш: `setCache(key, data, ttlMs)` — сохранять `data` с `expiresAt`; `getCache(key)` возвращает `null`, если</text>
+<text class="p" x="20" y="3656">протух.</text>
+<text class="p" x="20" y="3680">  2) Синк состояния с URL: сериализовать `q`, `category`, `page` в `?`‑строку, `pushState`, обрабатывать `popstate`.</text>
+<text class="p" x="20" y="3704">  3) Критерии: back/forward восстанавливает UI; мгновенный показ из кэша + фоновое обновление.</text>
+<text class="h3" x="20" y="3744">День 12 — ES‑modules и DevTools</text>
+<text class="li" x="44" y="3772">• Теория: MDN Modules/import/export/dynamic import; DevTools Network/Performance/Coverage.</text>
+<text class="li" x="44" y="3796">• Упражнения:</text>
+<text class="p" x="20" y="3820">  1) Разнести код на модули: `js/utils/{debounce.js, throttle.js, retry.js, withTimeout.js}`, `js/api/products.js`,</text>
+<text class="p" x="20" y="3844">`js/ui/{renderList.js, renderCard.js}`, `js/state/{url.js, storage.js}`. В HTML — `&lt;script type="module"</text>
+<text class="p" x="20" y="3868">src="js/main.js"&gt;&lt;/script&gt;`.</text>
+<text class="p" x="20" y="3892">  2) В `main.js` импортировать нужные функции; сделать 1 динамический импорт (ленивая загрузка форматтера) по клику.</text>
+<text class="p" x="20" y="3916">  3) DevTools: проверить waterfall (Network), long tasks (Performance), лишний код (Coverage).</text>
+<text class="p" x="20" y="3940">  4) Критерии: всё работает на статическом сервере; без глобальных переменных.</text>
+<text class="p" x="20" y="3980">---</text>
+<text class="h2" x="20" y="4020">Неделя 3 — Проект 1: «Умная форма» (регистрация/заказ)</text>
+<text class="h3" x="20" y="4068">Цели</text>
+<text class="li" x="44" y="4096">• Отработать формы, валидацию, обработку ошибок, POST‑запросы, отмену запросов, сохранение черновика, доступность.</text>
+<text class="h3" x="20" y="4136">Технологии</text>
+<text class="li" x="44" y="4164">• Ванильный JS + HTML + SCSS(BEM) (или CSS). Без сборщика. Простые ES‑модули.</text>
+<text class="h3" x="20" y="4204">ТЗ (MVP)</text>
+<text class="li" x="44" y="4232">• Поля: имя, email, телефон (нормализация или маска), пароль и подтверждение, чекбокс согласия.</text>
+<text class="li" x="44" y="4256">• Валидация: встроенная (required, pattern) + кастомная через `setCustomValidity`; общий блок ошибок `aria-live`.</text>
+<text class="li" x="44" y="4280">• Отправка: POST на ReqRes `/api/users` или `/api/register`; состояния UI: idle/loading/success/error; кнопка «Повторить».</text>
+<text class="li" x="44" y="4304">• Отмена: `AbortController` при повторных сабмитах.</text>
+<text class="li" x="44" y="4328">• Черновик: авто‑сохранение введенных значений в `localStorage` (с TTL 1–7 дней), кнопка «Сбросить».</text>
+<text class="li" x="44" y="4352">• A11y: правильные `label for`, порядок табов, видимый фокус, контрасты.</text>
+<text class="h3" x="20" y="4392">Структура</text>
+<text class="li" x="44" y="4420">• `index.html`, `styles/`, `js/`</text>
+<text class="p" x="20" y="4444">  - `js/api.js` — `postJSON(url, body, { signal })` с `fetch + withTimeout + retry` и проверкой `res.ok` → `Error('HTTP</text>
+<text class="p" x="20" y="4468">…')`</text>
+<text class="p" x="20" y="4492">  - `js/validation.js` — функции проверки полей (в т.ч. `ValidationError`)</text>
+<text class="p" x="20" y="4516">  - `js/ui.js` — показ ошибок, состояния загрузки/успеха/ошибок</text>
+<text class="p" x="20" y="4540">  - `js/draft.js` — get/set черновика в `localStorage` с TTL</text>
+<text class="p" x="20" y="4564">  - `js/main.js` — инициализация слушателей, сборка `FormData`, управление `AbortController`</text>
+<text class="h3" x="20" y="4604">Этапы реализации (по дням недели 3)</text>
+<text class="p" x="20" y="4632">1) День 13: Спецификация полей/ошибок, макет/семантический HTML, базовые стили и фокус. Подключить `type="module"`.</text>
+<text class="p" x="20" y="4656">2) День 14: Валидация: встроенная + кастомные тексты, `aria-live` для ошибок, нормализация телефона.</text>
+<text class="p" x="20" y="4680">3) День 15: `api.js`: POST на ReqRes с `withTimeout` и `retry`; в UI — idle/loading/success/error, дизейбл кнопки,</text>
+<text class="p" x="20" y="4704">«Повторить».</text>
+<text class="p" x="20" y="4728">4) День 16: `AbortController` — отмена предыдущего сабмита; `draft.js` — автосохранение и «Сбросить».</text>
+<text class="p" x="20" y="4752">5) День 17: A11y/Perf: Lighthouse ≥ 90 (мобайл), убрать лишние reflow, поправить контраст/фокус.</text>
+<text class="p" x="20" y="4776">6) День 18: README (цель, стек, фичи, как запустить, скриншоты, демо), деплой на GitHub Pages.</text>
+<text class="h3" x="20" y="4816">Критерии приёмки</text>
+<text class="li" x="44" y="4844">• Валидация без сторонних библиотек; понятные сообщения; `aria-live`.</text>
+<text class="li" x="44" y="4868">• Отмена/повтор запросов; корректная обработка ошибок сети/HTTP.</text>
+<text class="li" x="44" y="4892">• Черновик работает, не ломает валидацию.</text>
+<text class="li" x="44" y="4916">• Lighthouse (моб.) A11y/Best ≥ 90. README и демо присутствуют.</text>
+<text class="p" x="20" y="4956">---</text>
+<text class="h2" x="20" y="4996">Неделя 4 — Проект 2: «Каталог по публичному API» (DummyJSON)</text>
+<text class="h3" x="20" y="5044">Цели</text>
+<text class="li" x="44" y="5072">• Списки, поиск/фильтры/пагинация, кэш + SWR, отмена/ретраи/таймаут, синхронизация с URL, модульная архитектура</text>
+<text class="li" x="44" y="5096">• ES‑modules.</text>
+<text class="h3" x="20" y="5136">API</text>
+<text class="li" x="44" y="5164">• База: `https://dummyjson.com/products`</text>
+<text class="p" x="20" y="5188">  - GET `/products?limit=..&amp;skip=..`</text>
+<text class="p" x="20" y="5212">  - GET `/products/search?q=..`</text>
+<text class="p" x="20" y="5236">  - GET `/products/categories`</text>
+<text class="p" x="20" y="5260">  - GET `/products/category/{name}`</text>
+<text class="p" x="20" y="5284">  - GET `/products/{id}`</text>
+<text class="h3" x="20" y="5324">ТЗ (MVP)</text>
+<text class="li" x="44" y="5352">• Главная: список карточек товаров, фильтр по категории, поиск по строке, пагинация.</text>
+<text class="li" x="44" y="5376">• Деталь: страница продукта с данными (`/products/{id}`).</text>
+<text class="li" x="44" y="5400">• Состояния: скелетоны, пусто, ошибка, «повторить».</text>
+<text class="li" x="44" y="5424">• Кэш: last‑response в `localStorage` (TTL 10–30 сек) + SWR (показываем кэш сразу и фоново обновляем).</text>
+<text class="li" x="44" y="5448">• Отмена: `AbortController` при новом поисковом запросе; таймаут и ретраи для устойчивости.</text>
+<text class="li" x="44" y="5472">• URL‑синк: `?q=&amp;category=&amp;page=`; поддержка back/forward (`popstate`).</text>
+<text class="h3" x="20" y="5512">Структура</text>
+<text class="li" x="44" y="5540">• `index.html`, `product.html`, `styles/`, `js/`</text>
+<text class="p" x="20" y="5564">  - `js/api/products.js` — все запросы (list/search/categories/detail) + withTimeout/retry/abort</text>
+<text class="p" x="20" y="5588">  - `js/ui/{list.js, card.js, detail.js}` — рендер</text>
+<text class="p" x="20" y="5612">  - `js/state/{url.js, storage.js}` — синхронизация состояния и кэш</text>
+<text class="p" x="20" y="5636">  - `js/utils/{debounce.js, retry.js, withTimeout.js}`</text>
+<text class="p" x="20" y="5660">  - `js/main.js` (главная), `js/product.js` (деталь)</text>
+<text class="h3" x="20" y="5700">Этапы реализации (по дням недели 4)</text>
+<text class="p" x="20" y="5728">1) День 19: ТЗ, каркас HTML (главная и деталь), базовый SCSS(BEM), структура папок.</text>
+<text class="p" x="20" y="5752">2) День 20: Рендер списка + скелетоны, пагинация (UI), базовый поиск (input + debounce), делегирование кликов.</text>
+<text class="p" x="20" y="5776">3) День 21: `api/products.js` с abort/timeout/retry; кэш TTL + SWR (показываем кэш → обновляем фоном → мягко обновляем</text>
+<text class="p" x="20" y="5800">список).</text>
+<text class="p" x="20" y="5824">4) День 22: Фильтр по категории + URL‑синк (`URLSearchParams`, `pushState`, `popstate`), страница детали</text>
+<text class="p" x="20" y="5848">(`/products/{id}`), параллелить независимые запросы через `Promise.all`.</text>
+<text class="p" x="20" y="5872">5) День 23: Состояния пусто/ошибка, «повторить», responsive images (`srcset/sizes`), шрифты `woff2` + `font-display:</text>
+<text class="p" x="20" y="5896">swap`; Lighthouse ≥ 90.</text>
+<text class="p" x="20" y="5920">6) День 24: README (демо, стек, фичи, параметры URL, ограничения), деплой (GitHub Pages или Netlify без сборки).</text>
+<text class="h3" x="20" y="5960">Критерии приёмки</text>
+<text class="li" x="44" y="5988">• Модули разделены по слоям (`api/ui/state/utils`).</text>
+<text class="li" x="44" y="6012">• URL back/forward восстанавливает состояние.</text>
+<text class="li" x="44" y="6036">• Устойчивость к сети: отмена, таймаут, ретраи; кэш + SWR.</text>
+<text class="li" x="44" y="6060">• Lighthouse (моб.) A11y/Best ≥ 90. README и демо присутствуют.</text>
+<text class="p" x="20" y="6100">---</text>
+<text class="h2" x="20" y="6140">Общие критерии «готово»</text>
+<text class="li" x="44" y="6172">• Код чистый, модульный, без глобальных переменных.</text>
+<text class="li" x="44" y="6196">• A11y: семантика, фокус, контрасты, навигация с клавиатуры.</text>
+<text class="li" x="44" y="6220">• README в каждом проекте: цель, стек, фичи, демо, запуск, скриншоты.</text>
+<text class="li" x="44" y="6244">• Деплой: GitHub Pages/Netlify (без сборщиков).</text>
+<text class="li" x="44" y="6268">• Мини‑чек‑листы ручного тестирования:</text>
+<text class="p" x="20" y="6292">  - Форма: пустые/невалидные, отмена, повтор, черновик, сеть down.</text>
+<text class="p" x="20" y="6316">  - Каталог: быстрый ввод (отмена), смена категорий, пагинация, back/forward, оффлайн (кэш), ошибки сети (ретраи).</text>
+</svg>
